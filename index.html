@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Progressive Enhancement and Graceful Degradation</title>
+  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+  <style>
+    body {
+      width: 100%;
+      font-size: 100%;
+      font-family: 'Open Sans', sans-serif;
+      background-color: #b1e1e5;
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    
+    article {
+      width: 90%;
+      max-width: 30rem;
+      padding: 1rem;
+      margin: 1rem auto;
+      background-color: #c5faff;
+    }
+    
+    h1 {
+      display: inline;
+      color: #194b4f;
+      font-family: 'Abril Fatface', serif;
+      font-size: 2.5rem;
+    }
+    
+    footer {
+      text-align: center;
+      font-size: 75%;
+      padding-bottom: 1rem;
+    }
+
+  </style>
+</head>
+<body>
+  
+  <article>
+    <h1>Progressive Enhancement &amp; Graceful Degradation</h1>
+    <p>In web development, there are two dominant methods of ensuring that site content is available to the largest possible audience: progressive enhancement and graceful degradation. The goal of both methods is roughly the same, but the two processes approach this goal from opposite directions.</p>
+
+    <p>The idea behind progressive enhancement is that the most essential content should be built and rendered first, with less vital content only rendered on devices that offer good support for them. This enhanced content could include elements that require more bandwidth, such as high resolution images; CSS styling that is not well supported on certain platforms; scripts without universal browser support; or large content that will not fit well on smaller screens.</p>
+
+    <p>With graceful degradation, the most complex or desirable version of the site is built first and rendered by default. On devices without complete support, the unsupported elements disappear or degrade to a simpler version. For example, a site menu that uses the latest CSS and Javascript to display drop-down submenus may transform into a static menu on browsers or devices with limited CSS/JS support.</p>
+
+    <p>Both approaches have their advantages, but progressive enhancement has become the more widely accepted of the two. This is most evident in the recent popularity of mobile-first design, which is a current standard for responsive design. Mobile devices can only display a limited amount of content on their screens, and their bandwidth and processor speeds are likely to be lower than those of a laptop or desktop computer. Because of these limitations, and because it can be more challenging to design for smaller viewports, developers are encouraged to design for these small screens first and then add, enlarge or change the layout of elements for larger screens. This ensures that the essential content and user experience are preserved on every device, with the supplementary or non-essential content added only when it can be reliably rendered.</p>
+
+    <p>While graceful degradation is no longer the most accepted way to achieve responsivity, there are scenarios in which it is still useful. When a website is known to be almost exclusively used on larger screens, such as company intranet sites or pages with very complex interfaces, it may make sense to prioritize the user experience for desktop clients first, and offer a more limited experience for mobile users. Rendering a print-friendly version of a page is another time that degradation would be the best method. Designers wouldn't typically want to build a print-only version of the page first, but removing unnecessary elements (such as videos or site navigation) to create a print-friendly page can save bandwidth and printer ink.</p>
+
+    <p>In reality, both methods are often used in combination. While the majority of a site can, and should, be built for mobile-first and progressively enhance when it can, there are some elements that should be rendered by default but gracefully degraded when necessary.</p>
+
+    <p>The progressive enhancement and mobile-first design philosophies are still gaining traction with established developers. It can be difficult to change one's way of thinking about the essential process of building out a website, and not all developers have fully come on board. The mobile-first perspective encourages clean, efficient design, and once developers have embraced it, they often realize that this method encourages them to think critically about the most important parts of their site. This promotes greater focus on user experience and human-centered design, which is ultimately the most important aspect of web development.</p>
+  </article>
+  <footer>&copy; 2018 &bull; Lauren Halley</footer>
+  
+</body>
